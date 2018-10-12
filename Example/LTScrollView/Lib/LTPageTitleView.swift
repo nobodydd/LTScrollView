@@ -126,7 +126,7 @@ extension LTPageTitleView {
                 }
                 let textW = text.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: 8), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font : layout.titleFont ?? UIFont.systemFont(ofSize: 16)], context: nil).size.width
                 glt_textWidths.append(textW)
-                glt_lineWidths.append(textW)
+                glt_lineWidths.append(17)
             }
         }
          
