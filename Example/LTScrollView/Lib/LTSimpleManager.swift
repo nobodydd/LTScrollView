@@ -190,7 +190,7 @@
         viewController.glt_scrollView?.scrollHandle = {[weak self] scrollView in
             guard let `self` = self else { return }
             self.contentTableView = scrollView
-            if self.tableView.contentOffset.y  < self.kHeaderHeight - self.hoverY {
+            if self.tableView.contentOffset.y  < self.kHeaderHeight - self.hoverY + 44{
                 scrollView.contentOffset = CGPoint(x: 0, y: 0)
                 scrollView.showsVerticalScrollIndicator = false
             }else{
@@ -239,10 +239,10 @@
         delegate?.glt_scrollViewDidScroll?(scrollView)
         guard scrollView == tableView, let contentTableView = contentTableView else { return }
         let offsetY = scrollView.contentOffset.y
-        if contentTableView.contentOffset.y > 0 || offsetY > kHeaderHeight - hoverY {
-            tableView.contentOffset = CGPoint(x: 0.0, y: kHeaderHeight - hoverY)
+        if contentTableView.contentOffset.y > 0 || offsetY > kHeaderHeight - hoverY + 44 {
+            tableView.contentOffset = CGPoint(x: 0.0, y: kHeaderHeight - hoverY + 44 )
         }
-        if scrollView.contentOffset.y < kHeaderHeight - hoverY {
+        if scrollView.contentOffset.y < kHeaderHeight - hoverY + 44 {
             for viewController in viewControllers {
                 guard viewController.glt_scrollView != scrollView else { continue }
                 viewController.glt_scrollView?.contentOffset = .zero
