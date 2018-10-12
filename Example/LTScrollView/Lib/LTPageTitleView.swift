@@ -148,7 +148,7 @@ extension LTPageTitleView {
             if !layout.isAverage {
                 glt_textWidths.append(textW)
             }
-            glt_lineWidths.append(textW)
+            glt_lineWidths.append(17)
         }
         
         
