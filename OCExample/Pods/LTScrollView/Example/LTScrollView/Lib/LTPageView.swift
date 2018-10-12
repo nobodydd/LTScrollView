@@ -745,6 +745,16 @@ extension LTPageView {
         button.addTarget(self, action: #selector(titleSelectIndex(_:)), for: .touchUpInside)
         button.titleLabel?.font = layout.titleFont
         parentView.addSubview(button)
+        
+        
+        
+        if self.titles.count == 2 && layout.isAverage  {
+            let lineView = UIView(frame: CGRect(x: UIScreen.main.bounds.size.width*0.5, y: frame.size.height*0.15, width: 1, height: frame.height*0.7))
+            lineView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
+            parentView.addSubview(lineView)
+        }
+        
+        
         return button
     }
     
