@@ -117,7 +117,7 @@ extension LTPageTitleView {
             if layout.isAverage {
                 let textAverageW = (bounds.width - layout.lrMargin * 2.0 - layout.titleMargin * CGFloat(titles.count - 1)) / CGFloat(titles.count)
                 glt_textWidths.append(textAverageW)
-                glt_lineWidths.append(textAverageW)
+                glt_lineWidths.append(17)
             }else {
                 if text.count == 0 {
                     glt_textWidths.append(60)
@@ -126,7 +126,7 @@ extension LTPageTitleView {
                 }
                 let textW = text.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: 8), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font : layout.titleFont ?? UIFont.systemFont(ofSize: 16)], context: nil).size.width
                 glt_textWidths.append(textW)
-                glt_lineWidths.append(17)
+                glt_lineWidths.append(textW)
             }
         }
          
