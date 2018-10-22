@@ -132,6 +132,18 @@
         fatalError("init(coder:) has not been implemented")
     }
     
+    
+    @objc public func scrollToTOP() -> () {
+        UIView.animate(withDuration: 0.1, animations: {
+            for viewController in self.viewControllers {
+                viewController.glt_scrollView?.contentOffset = .zero
+            }
+        }) { (isFinish) in
+            self.tableView.contentOffset = .zero
+        }
+    }
+    
+    
     deinit {
         deallocConfig()
     }
