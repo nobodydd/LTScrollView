@@ -88,7 +88,7 @@
     private var contentTableView: UIScrollView?
     private var kHeaderHeight: CGFloat = 0.0
     private var headerView: UIView?
-    private var viewControllers: [UIViewController]
+    @objc public var viewControllers: [UIViewController]
     private var titles: [String]
     private var layout: LTLayout
     private weak var currentViewController: UIViewController?
