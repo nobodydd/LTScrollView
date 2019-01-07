@@ -114,6 +114,7 @@
 
 
 -(LTLayout *)layout {
+    
     if (!_layout) {
         _layout = [[LTLayout alloc] init];
         _layout.bottomLineHeight = 4.0;
