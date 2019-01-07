@@ -109,7 +109,6 @@
         //        [_managerView scrollToIndexWithIndex:self.viewControllers.count - 1];
         
     }
-    
     return _managerView;
 }
 
