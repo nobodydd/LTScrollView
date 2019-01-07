@@ -120,6 +120,7 @@
         _layout.bottomLineCornerRadius = 2.0;
         /* 更多属性设置请参考 LTLayout 中 public 属性说明 */
     }
+    
     return _layout;
 }
 
