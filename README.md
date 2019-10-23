@@ -1,4 +1,4 @@
-# LTScrollView
+﻿# LTScrollView
 
 实现原理： [http://blog.csdn.net/glt_code/article/details/78576628](http://blog.csdn.net/glt_code/article/details/78576628)
 
@@ -150,3 +150,4 @@ self.glt_scrollView = self.tableView（self.scrollView / self.collectionView）
 LTScrollView is available under the MIT license. See the LICENSE file for more info.
 
 
+test1
