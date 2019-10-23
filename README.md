@@ -1,7 +1,7 @@
 ﻿# LTScrollView
 
 
-
+2
 13
 实现原理： [http://blog.csdn.net/glt_code/article/details/78576628](http://blog.csdn.net/glt_code/article/details/78576628)
 
